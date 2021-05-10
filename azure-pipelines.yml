@@ -14,7 +14,7 @@ variables:
   dockerRegistryServiceConnection: 'e6f9ed19-e77d-4a80-816c-d5339b787c5d'
   imageRepository: 'vardanssamplespring'
   containerRegistry: 'testing99.azurecr.io'
-  dockerfilePath: '**/Dockerfile'
+  dockerfilePath: 'docker-spring-boot/Dockerfile'
   tag: '$(Build.BuildId)'
   imagePullSecret: 'testing994675-auth'
 
