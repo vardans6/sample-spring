@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: vardanssamplespring 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: vardanssamplespring
+  template:
+    metadata:
+      labels:
+        app: vardanssamplespring 
+    spec:
+      containers:
+        - name: vardanssamplespring 
+          image: testing99.azurecr.io/vardanssamplespring
+          ports:
+          - containerPort: 80
