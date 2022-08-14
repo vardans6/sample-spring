@@ -38,6 +38,18 @@ stages:
             # Write your commands here
             
             sleep 3000
+  - job: test
+    displayName: test
+    pool:
+      name: new-agentpool
+    steps:
+      - task: Bash@3
+        inputs:
+          targetType: 'inline'
+          script: |
+            # Write your commands here
+            
+            sleep 3000
 - stage: Deploy
   displayName: Deploy stage
   jobs:
