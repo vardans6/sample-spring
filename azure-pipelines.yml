@@ -17,8 +17,8 @@ variables:
   dockerfilePath: 'docker-spring-boot/Dockerfile'
   tag: '$(Build.BuildId)'
   imagePullSecret: 'testing994675-auth'
-#Agent VM image name
- vmImageName: 'ubuntu-latest'
+
+  vmImageName: 'ubuntu-latest'
 #pool: new-agentpool
 
 stages:
@@ -27,7 +27,7 @@ stages:
   jobs:
   - job: Build
     displayName: Build
-    vmImageName: 'ubuntu-latest'
+    # vmImageName: 'ubuntu-latest'
     steps:
       - task: Bash@3
         inputs:
