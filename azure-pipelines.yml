@@ -41,8 +41,8 @@ stages:
 - stage: Deploy
   displayName: Deploy stage
   jobs:
-  - job: Build
-    displayName: Build
+  - job: Deploy
+    displayName: Deploy
     pool:
       name: new-agentpool
     steps:
